@@ -4,6 +4,12 @@ public class Dog {
     Dog(String c){
         color = c;
     }
+    public boolean equals(Object o){
+        return ((Dog)o).color.equals(this.color);
+    }
+    public int hashCode(){
+       return color.length();
+    }
     public String toString(){
         return color + " dog";
     }
